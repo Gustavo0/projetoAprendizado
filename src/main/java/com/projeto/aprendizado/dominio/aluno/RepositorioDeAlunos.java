@@ -9,6 +9,8 @@ public interface RepositorioDeAlunos {
 	Aluno buscarPorCPF(CPF cpf);
 
 	void atualizarAluno(Aluno aluno);
+
+	void apagarAluno(Aluno aluno);
 	
 	List<Aluno> listarTodosAlunosMatriculados();
 	

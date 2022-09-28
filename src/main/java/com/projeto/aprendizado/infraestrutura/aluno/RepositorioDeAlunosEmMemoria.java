@@ -33,6 +33,11 @@ public class RepositorioDeAlunosEmMemoria implements RepositorioDeAlunos {
 	}
 
 	@Override
+	public void apagarAluno(Aluno aluno) {
+		matriculados.remove(aluno);
+	}
+
+	@Override
 	public List<Aluno> listarTodosAlunosMatriculados() {
 		return this.matriculados;
 	}
