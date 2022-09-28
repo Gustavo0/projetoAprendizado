@@ -1,4 +1,4 @@
-package com.projeto.aprendizado.aplicacao.aluno.matricular;
+package com.projeto.aprendizado.aplicacao.aluno.atualizar;
 
 import lombok.Getter;
 

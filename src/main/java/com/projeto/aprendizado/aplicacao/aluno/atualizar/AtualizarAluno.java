@@ -1,4 +1,4 @@
-package com.projeto.aprendizado.aplicacao.aluno.matricular;
+package com.projeto.aprendizado.aplicacao.aluno.atualizar;
 
 import com.projeto.aprendizado.dominio.aluno.Aluno;
 import com.projeto.aprendizado.dominio.aluno.CPF;
