@@ -29,7 +29,6 @@ public class RepositorioDeAlunosEmMemoria implements RepositorioDeAlunos {
 	public void atualizarAluno(Aluno aluno) {
 		matriculados.remove(aluno);
 		matriculados.add(aluno);
-
 	}
 
 	@Override
