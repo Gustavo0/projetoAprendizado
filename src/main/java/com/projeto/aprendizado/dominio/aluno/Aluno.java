@@ -9,9 +9,9 @@ public class Aluno {
 	private String nome;
 	
 	private Email email;
-	
+
 	private List<Telefone> telefones = new ArrayList<>();
-	
+
 	private String senha;
 	
 	public Aluno(CPF cpf, String nome, Email email) {
@@ -35,13 +35,17 @@ public class Aluno {
 	public String getEmail() {
 		return email.getEndereco();
 	}
-	
+
 	public List<Telefone> getTelefones() {
 		return telefones;
 	}
 
 	public String getSenha() {
 		return senha;
+	}
+
+	public void trocaEmail(String email){
+		this.email = new Email(email);
 	}
 	
 }

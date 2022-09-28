@@ -11,7 +11,6 @@ class MatricularAlunoTest {
 
 	@Test
 	void alunoDeveriaSerPersistido() {
-		// MOCK -> Mockito
 		RepositorioDeAlunosEmMemoria repositorio = new RepositorioDeAlunosEmMemoria();
 		MatricularAluno useCase = new MatricularAluno(repositorio);
 		

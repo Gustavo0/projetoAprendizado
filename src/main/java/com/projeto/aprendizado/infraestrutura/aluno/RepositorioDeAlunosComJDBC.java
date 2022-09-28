@@ -74,6 +74,11 @@ public class RepositorioDeAlunosComJDBC implements RepositorioDeAlunos {
 	}
 
 	@Override
+	public void atualizarAluno(Aluno aluno) {
+		//TO-DO
+	}
+
+	@Override
 	public List<Aluno> listarTodosAlunosMatriculados() {
 		try {
 			String sql = "SELECT id, cpf, nome, email FROM ALUNO";
