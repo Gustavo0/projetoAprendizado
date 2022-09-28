@@ -1,8 +1,13 @@
-package com.projeto.aprendizado.infraestrutura.aluno;
+package com.projeto.aprendizado.infraestrutura.aluno.db;
+
+import lombok.Builder;
+import lombok.Getter;
 
 import javax.persistence.*;
 
 @Entity
+@Builder
+@Getter
 public class TelefoneEntity {
 
 	@Id

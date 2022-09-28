@@ -17,10 +17,11 @@ public class MatricularAlunoDto {
 	}
 
 	public Aluno criarAluno() {
-		return new Aluno(
-				new CPF(cpfAluno),
-				nomeAluno, 
-				new Email(emailAluno));
+		return Aluno.builder()
+				.cpf(new CPF(cpfAluno))
+				.nome(nomeAluno)
+				.email(new Email(emailAluno))
+				.build();
 	}
 	
 }

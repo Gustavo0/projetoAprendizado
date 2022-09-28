@@ -1,4 +1,4 @@
-package com.projeto.aprendizado.infraestrutura.aluno;
+package com.projeto.aprendizado.infraestrutura.aluno.db;
 
 import com.projeto.aprendizado.dominio.aluno.Aluno;
 import com.projeto.aprendizado.dominio.aluno.AlunoNaoEncontrado;

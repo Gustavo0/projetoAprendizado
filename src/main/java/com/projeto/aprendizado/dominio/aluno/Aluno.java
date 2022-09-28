@@ -1,8 +1,11 @@
 package com.projeto.aprendizado.dominio.aluno;
 
+import lombok.Builder;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Builder
 public class Aluno {
 	
 	private CPF cpf;
@@ -13,12 +16,6 @@ public class Aluno {
 	private List<Telefone> telefones = new ArrayList<>();
 
 	private String senha;
-	
-	public Aluno(CPF cpf, String nome, Email email) {
-		this.cpf = cpf;
-		this.nome = nome;
-		this.email = email;
-	}
 
 	public void adicionarTelefone(String ddd, String numero) {
 		this.telefones.add(new Telefone(ddd, numero));

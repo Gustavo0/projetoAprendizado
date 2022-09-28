@@ -1,4 +1,4 @@
-package com.projeto.aprendizado.infraestrutura.aluno;
+package com.projeto.aprendizado.infraestrutura.aluno.db;
 
 import com.projeto.aprendizado.dominio.aluno.*;
 
@@ -54,7 +54,10 @@ public class RepositorioDeAlunosComJDBC implements RepositorioDeAlunos {
 
 			String nome = rs.getString("nome");
 			Email email = new Email(rs.getString("email"));
-			Aluno encontrado = new Aluno(cpf, nome, email);
+			Aluno encontrado = Aluno.builder().cpf(cpf)
+											.nome(nome)
+											.email(email)
+											.build();
 			
 			Long id = rs.getLong("id");
 			sql = "SELECT ddd, numero FROM TELEFONE WHERE aluno_id = ?";
@@ -94,7 +97,10 @@ public class RepositorioDeAlunosComJDBC implements RepositorioDeAlunos {
 				CPF cpf = new CPF(rs.getString("cpf"));
 				String nome = rs.getString("nome");
 				Email email = new Email(rs.getString("email"));
-				Aluno aluno = new Aluno(cpf, nome, email);
+				Aluno aluno = Aluno.builder().cpf(cpf)
+											.nome(nome)
+											.email(email)
+											.build();
 				
 				Long id = rs.getLong("id");
 				sql = "SELECT ddd, numero FROM TELEFONE WHERE aluno_id = ?";

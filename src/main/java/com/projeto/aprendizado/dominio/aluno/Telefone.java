@@ -1,5 +1,8 @@
 package com.projeto.aprendizado.dominio.aluno;
 
+import lombok.Builder;
+
+@Builder
 public class Telefone {
 	
 	private String ddd;

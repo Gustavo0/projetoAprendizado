@@ -1,4 +1,7 @@
-package com.projeto.aprendizado.infraestrutura.aluno;
+package com.projeto.aprendizado.infraestrutura.aluno.db;
+
+import lombok.Builder;
+import lombok.Getter;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -6,6 +9,8 @@ import javax.persistence.OneToMany;
 import java.util.List;
 
 @Entity
+@Builder
+@Getter
 public class AlunoEntity {
 
 	@Id
