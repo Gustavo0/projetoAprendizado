@@ -21,7 +21,7 @@ class CPFTest {
 	@Test
 	void deveriaPermitirCriarCPFComNumeroValido() {
 		String numero = "123.456.789-00";
-		CPF cpf = new CPF(numero);
+		CPF cpf = CPF.builder().numero(numero).build();
 		assertEquals(numero, cpf.getNumero());
 	}
 
