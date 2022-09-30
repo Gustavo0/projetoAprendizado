@@ -3,7 +3,9 @@ package com.projeto.aprendizado.aplicacao.aluno.atualizar;
 import com.projeto.aprendizado.dominio.aluno.Aluno;
 import com.projeto.aprendizado.dominio.aluno.CPF;
 import com.projeto.aprendizado.dominio.aluno.RepositorioDeAlunos;
+import org.springframework.stereotype.Service;
 
+@Service
 public class AtualizarAluno {
 
     private final RepositorioDeAlunos repositorio;

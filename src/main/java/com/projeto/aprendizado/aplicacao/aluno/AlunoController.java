@@ -2,7 +2,6 @@ package com.projeto.aprendizado.aplicacao.aluno;
 
 import com.projeto.aprendizado.aplicacao.aluno.matricular.MatricularAluno;
 import com.projeto.aprendizado.aplicacao.aluno.matricular.MatricularAlunoDto;
-import com.projeto.aprendizado.infraestrutura.aluno.db.RepositorioAlunoJPA;
 import com.projeto.aprendizado.infraestrutura.aluno.db.RepositorioDeAlunosEmMemoria;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

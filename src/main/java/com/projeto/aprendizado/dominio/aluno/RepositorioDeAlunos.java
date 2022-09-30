@@ -1,7 +1,10 @@
 package com.projeto.aprendizado.dominio.aluno;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.List;
 
+@Repository
 public interface RepositorioDeAlunos {
 	
 	void matricular(Aluno aluno);
@@ -13,7 +16,5 @@ public interface RepositorioDeAlunos {
 	void apagarAluno(Aluno aluno);
 	
 	List<Aluno> listarTodosAlunosMatriculados();
-	
-	//...
 
 }

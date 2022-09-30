@@ -3,7 +3,9 @@ package com.projeto.aprendizado.aplicacao.aluno.apagar;
 import com.projeto.aprendizado.dominio.aluno.Aluno;
 import com.projeto.aprendizado.dominio.aluno.CPF;
 import com.projeto.aprendizado.dominio.aluno.RepositorioDeAlunos;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ApagarAluno {
 
     private final RepositorioDeAlunos repositorio;

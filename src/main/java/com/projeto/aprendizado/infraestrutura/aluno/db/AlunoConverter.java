@@ -4,10 +4,12 @@ import com.projeto.aprendizado.dominio.aluno.Aluno;
 import com.projeto.aprendizado.dominio.aluno.CPF;
 import com.projeto.aprendizado.dominio.aluno.Email;
 import com.projeto.aprendizado.dominio.aluno.Telefone;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class AlunoConverter {
 
     public List<AlunoEntity> toAlunosEntity(List<Aluno> alunos){
@@ -25,7 +27,7 @@ public class AlunoConverter {
                 .email(aluno.getEmail())
                 .nome(aluno.getNome())
                 .senha(aluno.getSenha())
-                .telefones(toTelefoneEntity(aluno.getTelefones()))
+                .telefones(aluno.getTelefones() != null ? toTelefoneEntity(aluno.getTelefones()) : null)
                 .build();
     }
 
@@ -54,7 +56,7 @@ public class AlunoConverter {
                 .email(new Email(entity.getEmail()))
                 .nome(entity.getNome())
                 .senha(entity.getSenha())
-                .telefones(toTelefone(entity.getTelefones()))
+                .telefones(entity.getTelefones() != null ? toTelefone(entity.getTelefones()) : null)
                 .build();
     }
 

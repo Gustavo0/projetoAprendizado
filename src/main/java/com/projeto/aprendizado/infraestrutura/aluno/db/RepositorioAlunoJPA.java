@@ -4,18 +4,21 @@ import com.projeto.aprendizado.dominio.aluno.Aluno;
 import com.projeto.aprendizado.dominio.aluno.AlunoNaoEncontrado;
 import com.projeto.aprendizado.dominio.aluno.CPF;
 import com.projeto.aprendizado.dominio.aluno.RepositorioDeAlunos;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
+@Primary
 public class RepositorioAlunoJPA implements RepositorioDeAlunos {
 
+    @Autowired
     private AlunoRepository repository;
-    private AlunoConverter converter;
 
-    public RepositorioAlunoJPA(AlunoRepository repository, AlunoConverter converter){
-        this.repository = repository;
-        this.converter = converter;
-    }
+    @Autowired
+    private AlunoConverter converter;
 
     @Override
     public void matricular(Aluno aluno) {

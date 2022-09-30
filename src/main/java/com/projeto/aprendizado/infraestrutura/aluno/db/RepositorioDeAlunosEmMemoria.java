@@ -4,10 +4,12 @@ import com.projeto.aprendizado.dominio.aluno.Aluno;
 import com.projeto.aprendizado.dominio.aluno.AlunoNaoEncontrado;
 import com.projeto.aprendizado.dominio.aluno.CPF;
 import com.projeto.aprendizado.dominio.aluno.RepositorioDeAlunos;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class RepositorioDeAlunosEmMemoria implements RepositorioDeAlunos {
 
 	private List<Aluno> matriculados = new ArrayList<>();

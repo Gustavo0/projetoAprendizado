@@ -2,7 +2,9 @@ package com.projeto.aprendizado.aplicacao.aluno.matricular;
 
 import com.projeto.aprendizado.dominio.aluno.Aluno;
 import com.projeto.aprendizado.dominio.aluno.RepositorioDeAlunos;
+import org.springframework.stereotype.Service;
 
+@Service
 public class MatricularAluno {
 	
 	private final RepositorioDeAlunos repositorio;

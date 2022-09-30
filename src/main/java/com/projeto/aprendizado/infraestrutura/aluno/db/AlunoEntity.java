@@ -1,16 +1,17 @@
 package com.projeto.aprendizado.infraestrutura.aluno.db;
 
 import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.List;
 
 @Entity
 @Builder
-@Getter
+@Data
 public class AlunoEntity {
 
 	@Id
@@ -20,10 +21,12 @@ public class AlunoEntity {
 
 	private String email;
 
-	@OneToMany(mappedBy="aluno")
+	@OneToMany(mappedBy="aluno", fetch = FetchType.EAGER)
 	private List<TelefoneEntity> telefones;
 
 	private String senha;
+
+	public AlunoEntity(){}
 
 	public AlunoEntity(String cpf, String nome, String email, List<TelefoneEntity> telefones, String senha) {
 		this.cpf = cpf;

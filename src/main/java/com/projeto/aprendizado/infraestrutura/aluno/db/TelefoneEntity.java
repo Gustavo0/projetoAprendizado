@@ -14,7 +14,7 @@ public class TelefoneEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name="cpf")
 	private AlunoEntity aluno;
 
