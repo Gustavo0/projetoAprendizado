@@ -26,7 +26,7 @@ public class SecurityConfig {
     };
 
     private static final String[] PUBLIC_MATCHERS_POST = {
-            "/clientes/**"
+            "/aluno/**"
     };
 
     @Bean
@@ -40,6 +40,7 @@ public class SecurityConfig {
         http
                 .authorizeRequests()
                 .antMatchers(PUBLIC_MATCHERS).permitAll()
+                .antMatchers(PUBLIC_MATCHERS_POST).permitAll()
                 .anyRequest().authenticated();
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
