@@ -107,7 +107,7 @@
 					<excludes>
 						<exclude>**/aplicacao/advice/*</exclude>
 						<exclude>**/aplicacao/indicacao/*</exclude>
-						<exclude>**/dominio/aluno/validation/*Validation</exclude>
+						<exclude>**/dominio/aluno/validation/*</exclude>
 						<exclude>**/dominio/aluno/interfaces/*</exclude>
 						<exclude>**/config/*</exclude>
 						<exclude>**/indicacao/*</exclude>
@@ -125,7 +125,7 @@
 								<limit>
 									<counter>LINE</counter>
 									<value>COVEREDRATIO</value>
-									<minimum>0.00</minimum>
+									<minimum>0.90</minimum>
 								</limit>
 							</limits>
 						</rule>

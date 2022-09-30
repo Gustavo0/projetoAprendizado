@@ -4,12 +4,14 @@ import com.projeto.aprendizado.dominio.aluno.Aluno;
 import com.projeto.aprendizado.dominio.utils.CPF;
 import com.projeto.aprendizado.dominio.utils.Email;
 import com.projeto.aprendizado.dominio.aluno.validation.DadosAlunoValidation;
+import lombok.Builder;
 import lombok.Getter;
 
 import javax.validation.constraints.NotEmpty;
 
 @Getter
 @DadosAlunoValidation
+@Builder
 public class MatricularAlunoDto {
 
 	@NotEmpty
