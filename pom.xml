@@ -111,6 +111,12 @@
 						<exclude>**/dominio/aluno/interfaces/*</exclude>
 						<exclude>**/config/*</exclude>
 						<exclude>**/indicacao/*</exclude>
+						<exclude>**/**/*Entity.class</exclude>
+						<exclude>**/**/*Builder*</exclude>
+						<exclude>**/**/*JDBC*</exclude>
+						<exclude>**/**/*MD5*</exclude>
+						<exclude>**/**/*Dto*</exclude>
+						<exclude>**/**/*Application*</exclude>
 					</excludes>
 					<rules>
 						<rule>
