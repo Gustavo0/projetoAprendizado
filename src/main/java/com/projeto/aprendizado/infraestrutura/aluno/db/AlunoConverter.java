@@ -65,7 +65,7 @@ public class AlunoConverter {
         for(TelefoneEntity telefone : telefonesEntities){
             telefones.add(Telefone.builder()
                     .ddd(telefone.getNumero().substring(0,2))
-                    .numero(telefone.getNumero().substring(3))
+                    .numero(telefone.getNumero().substring(2,10))
                     .build());
         }
         return telefones;
