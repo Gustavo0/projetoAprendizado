@@ -58,6 +58,7 @@ class AlunoConverterTest {
                         .email("email2@email.com")
                         .telefones(Arrays.asList(TelefoneEntity.builder().numero("3333333333").build(),
                                 TelefoneEntity.builder().numero("4444444444").build()))
+                        .senha("senha")
                         .build());
 
         //Quando eu converter para entity
@@ -67,5 +68,8 @@ class AlunoConverterTest {
         assertEquals(2, alunos.size());
         assertEquals("Fulano", alunos.get(0).getNome());
         assertEquals("Fulano2", alunos.get(1).getNome());
+        assertEquals("333.333.333-33", alunos.get(1).getCpf());
+        assertEquals("email2@email.com", alunos.get(1).getEmail());
+        assertEquals("senha", alunos.get(1).getSenha());
     }
 }

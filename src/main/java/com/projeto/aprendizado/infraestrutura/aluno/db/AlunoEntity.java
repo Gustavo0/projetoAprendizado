@@ -3,10 +3,7 @@ package com.projeto.aprendizado.infraestrutura.aluno.db;
 import lombok.Builder;
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -21,7 +18,7 @@ public class AlunoEntity {
 
 	private String email;
 
-	@OneToMany(mappedBy="aluno", fetch = FetchType.EAGER)
+	@OneToMany(mappedBy="aluno", fetch = FetchType.EAGER, cascade= CascadeType.ALL)
 	private List<TelefoneEntity> telefones;
 
 	private String senha;

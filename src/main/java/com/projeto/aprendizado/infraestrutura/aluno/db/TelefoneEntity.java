@@ -14,10 +14,17 @@ public class TelefoneEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@ManyToOne(fetch = FetchType.EAGER)
+	@ManyToOne
 	@JoinColumn(name="cpf")
 	private AlunoEntity aluno;
 
 	private String numero;
+
+	public TelefoneEntity(){}
+
+	public TelefoneEntity(Long id, AlunoEntity aluno, String numero){
+		this.aluno = aluno;
+		this.numero = numero;
+	}
 
 }

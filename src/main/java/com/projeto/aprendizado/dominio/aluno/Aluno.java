@@ -5,6 +5,7 @@ import com.projeto.aprendizado.dominio.utils.Email;
 import lombok.Builder;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Builder
@@ -12,14 +13,17 @@ public class Aluno {
 	
 	private CPF cpf;
 	private String nome;
-	
+
 	private Email email;
 
-	private List<Telefone> telefones = new ArrayList<>();
+	private List<Telefone> telefones;
 
 	private String senha;
 
 	public void adicionarTelefone(String ddd, String numero) {
+		if(this.telefones == null){
+			telefones = new ArrayList<>();
+		}
 		this.telefones.add(new Telefone(ddd, numero));
 	}
 	

@@ -22,19 +22,22 @@ public class AlunoConverter {
     }
 
     public AlunoEntity toAlunoEntity(Aluno aluno){
-        return AlunoEntity.builder()
+        AlunoEntity entity = AlunoEntity.builder()
                 .cpf(aluno.getCpf())
                 .email(aluno.getEmail())
                 .nome(aluno.getNome())
                 .senha(aluno.getSenha())
-                .telefones(aluno.getTelefones() != null ? toTelefoneEntity(aluno.getTelefones()) : null)
                 .build();
+
+        entity.setTelefones(aluno.getTelefones() != null ? toTelefoneEntity(aluno.getTelefones(), entity) : null);
+        return entity;
     }
 
-    private List<TelefoneEntity> toTelefoneEntity(List<Telefone> telefones) {
+    private List<TelefoneEntity> toTelefoneEntity(List<Telefone> telefones, AlunoEntity entity) {
         List<TelefoneEntity> telefonesEntities = new ArrayList<>();
         for(Telefone telefone : telefones){
             telefonesEntities.add(TelefoneEntity.builder()
+                    .aluno(entity)
                     .numero(telefone.getDdd() + telefone.getNumero())
                     .build());
         }
