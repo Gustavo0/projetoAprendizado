@@ -3,7 +3,7 @@ package com.projeto.aprendizado.aplicacao.aluno.matricular;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.projeto.aprendizado.dominio.aluno.Aluno;
-import com.projeto.aprendizado.dominio.aluno.CPF;
+import com.projeto.aprendizado.dominio.utils.CPF;
 import com.projeto.aprendizado.infraestrutura.aluno.db.RepositorioDeAlunosEmMemoria;
 import org.junit.jupiter.api.Test;
 

@@ -1,8 +1,8 @@
 package com.projeto.aprendizado.infraestrutura.aluno.db;
 
 import com.projeto.aprendizado.dominio.aluno.Aluno;
-import com.projeto.aprendizado.dominio.aluno.CPF;
-import com.projeto.aprendizado.dominio.aluno.Email;
+import com.projeto.aprendizado.dominio.utils.CPF;
+import com.projeto.aprendizado.dominio.utils.Email;
 import com.projeto.aprendizado.dominio.aluno.Telefone;
 import org.springframework.stereotype.Component;
 

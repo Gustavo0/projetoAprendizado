@@ -1,5 +1,7 @@
 package com.projeto.aprendizado.dominio.aluno;
 
+import com.projeto.aprendizado.dominio.utils.CPF;
+import com.projeto.aprendizado.dominio.utils.Email;
 import lombok.Builder;
 
 import java.util.ArrayList;

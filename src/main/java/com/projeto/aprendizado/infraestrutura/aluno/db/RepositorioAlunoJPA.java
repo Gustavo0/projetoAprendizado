@@ -2,8 +2,8 @@ package com.projeto.aprendizado.infraestrutura.aluno.db;
 
 import com.projeto.aprendizado.dominio.aluno.Aluno;
 import com.projeto.aprendizado.dominio.aluno.AlunoNaoEncontrado;
-import com.projeto.aprendizado.dominio.aluno.CPF;
-import com.projeto.aprendizado.dominio.aluno.RepositorioDeAlunos;
+import com.projeto.aprendizado.dominio.utils.CPF;
+import com.projeto.aprendizado.dominio.aluno.interfaces.RepositorioDeAlunos;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;

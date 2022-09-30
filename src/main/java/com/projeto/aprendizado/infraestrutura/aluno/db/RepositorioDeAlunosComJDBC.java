@@ -1,6 +1,9 @@
 package com.projeto.aprendizado.infraestrutura.aluno.db;
 
 import com.projeto.aprendizado.dominio.aluno.*;
+import com.projeto.aprendizado.dominio.aluno.interfaces.RepositorioDeAlunos;
+import com.projeto.aprendizado.dominio.utils.CPF;
+import com.projeto.aprendizado.dominio.utils.Email;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

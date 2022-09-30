@@ -1,6 +1,6 @@
 package com.projeto.aprendizado.infraestrutura.aluno;
 
-import com.projeto.aprendizado.dominio.aluno.CifradorDeSenha;
+import com.projeto.aprendizado.dominio.aluno.interfaces.CifradorDeSenha;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

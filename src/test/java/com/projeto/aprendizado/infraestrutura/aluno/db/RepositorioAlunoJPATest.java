@@ -2,8 +2,8 @@ package com.projeto.aprendizado.infraestrutura.aluno.db;
 
 import com.projeto.aprendizado.AprendizadoApplication;
 import com.projeto.aprendizado.dominio.aluno.Aluno;
-import com.projeto.aprendizado.dominio.aluno.CPF;
-import com.projeto.aprendizado.dominio.aluno.Email;
+import com.projeto.aprendizado.dominio.utils.CPF;
+import com.projeto.aprendizado.dominio.utils.Email;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

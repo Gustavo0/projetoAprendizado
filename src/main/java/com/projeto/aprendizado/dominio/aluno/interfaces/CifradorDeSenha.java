@@ -1,4 +1,4 @@
-package com.projeto.aprendizado.dominio.aluno;
+package com.projeto.aprendizado.dominio.aluno.interfaces;
 
 public interface CifradorDeSenha {
 

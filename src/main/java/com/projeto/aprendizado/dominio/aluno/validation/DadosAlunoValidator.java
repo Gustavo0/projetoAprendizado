@@ -2,8 +2,8 @@ package com.projeto.aprendizado.dominio.aluno.validation;
 
 import com.projeto.aprendizado.aplicacao.advice.FieldMessage;
 import com.projeto.aprendizado.aplicacao.aluno.matricular.MatricularAlunoDto;
-import com.projeto.aprendizado.dominio.aluno.CPF;
-import com.projeto.aprendizado.dominio.aluno.Email;
+import com.projeto.aprendizado.dominio.utils.CPF;
+import com.projeto.aprendizado.dominio.utils.Email;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

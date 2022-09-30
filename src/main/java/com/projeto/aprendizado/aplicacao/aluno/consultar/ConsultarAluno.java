@@ -1,8 +1,8 @@
 package com.projeto.aprendizado.aplicacao.aluno.consultar;
 
 import com.projeto.aprendizado.dominio.aluno.Aluno;
-import com.projeto.aprendizado.dominio.aluno.CPF;
-import com.projeto.aprendizado.dominio.aluno.RepositorioDeAlunos;
+import com.projeto.aprendizado.dominio.utils.CPF;
+import com.projeto.aprendizado.dominio.aluno.interfaces.RepositorioDeAlunos;
 import org.springframework.stereotype.Service;
 
 @Service

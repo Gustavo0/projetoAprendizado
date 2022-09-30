@@ -4,7 +4,7 @@ import com.projeto.aprendizado.aplicacao.aluno.matricular.MatricularAluno;
 import com.projeto.aprendizado.aplicacao.aluno.matricular.MatricularAlunoDto;
 import com.projeto.aprendizado.dominio.aluno.Aluno;
 import com.projeto.aprendizado.dominio.aluno.AlunoNaoEncontrado;
-import com.projeto.aprendizado.dominio.aluno.CPF;
+import com.projeto.aprendizado.dominio.utils.CPF;
 import com.projeto.aprendizado.infraestrutura.aluno.db.RepositorioDeAlunosEmMemoria;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
